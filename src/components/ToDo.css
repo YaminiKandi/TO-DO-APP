@@ -1,0 +1,93 @@
+.todo-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #000000AA;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.todo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	padding: 16px;
+	background: #E6E1E5;
+	position: relative;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+}
+
+.todo-title, .todo-status{
+	font-size: medium;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.todo-title {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 4px;
+}
+
+.title-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.title-error {
+	font-weight: 400;
+	font-size: small;
+	width: fit-content;
+	white-space: nowrap;
+	color: red;
+	margin-left: 48px;
+}
+
+.todo-title p, .todo-status p {
+	width: 50px;
+}
+
+#title, #status{
+	width: 300px;
+	height: 30px;
+	font-size: medium;
+	padding: 0 4px;
+}
+
+.form-buttons {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	gap: 12px;
+	margin-top: 24px;
+}
+
+.add-btn, .cncl-btn{
+	color: black;
+	width: 100px;
+	height: 32px;
+	border: none;
+	border-radius: 5px;
+	font-size: medium;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.add-btn{
+	background: #83A3A0;
+}

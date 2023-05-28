@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.home {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 24px 48px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    padding: 24px 16px;
+  }
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center; 
+}
+
+.todo-header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.main-title{
+  font-size: x-large;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  color:#6A95A0;
+}
+
+.Tabs {
+  width: 100%;
+  flex: 1 1 0%;
+  background: #6A95A0;
+  margin-top: 40px;
+  padding: 24px 24px;
+  color: white;
+  border-radius: 32px;
+  @media screen(max-width:768px) {
+    padding: 24px 16px;
+  }
+}
+
+ul.nav {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #4D5C60;
+  border-radius: 32px;
+}
+
+ul.nav li {
+  width: 33%;
+  padding: 16px;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+ul.nav li:first-child {
+  border-bottom-left-radius: 32px;
+  border-top-left-radius: 32px;
+}
+ 
+ul.nav li:last-child {
+  border-bottom-right-radius: 32px;
+  border-top-right-radius: 32px;
+}
+
+ul.nav li:hover {
+  background: #83A3A0;
+}
+
+ul.nav li.active {
+  background: #4D5C60;
+}
+
+.g-btn {
+  width: 100% !important;
+  height: 40px !important;
+  line-height: 40px !important;
+  font-size: 15px !important;
+}
+
+.g-btn > div, .g-btn > div > svg {
+  width: 40px !important;
+  height: 38px !important;
+}
+
+.f-password{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.login, .signup, .fp {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.login-header,
+.signup-header,
+.fp-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.login-signup,
+.signup-login,
+.fp-signup {
+  margin-top: 40px;
+  text-align: center;
+}
