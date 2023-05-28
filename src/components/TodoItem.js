@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import {AiOutlineDelete} from 'react-icons/ai'
 import './Tabs.css'
 import { TiTick } from 'react-icons/ti';
