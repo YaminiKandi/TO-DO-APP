@@ -73,7 +73,10 @@ function Home() {
   return (
     <div className="home">
       <div className='todo-header'>
-        <h1 className='main-title'>TO-DO LIST</h1>
+        <div className='todo-header-left'>
+          <div className='todo-header-logo'></div>
+          <h1 className='main-title'>TO-DO LIST</h1>
+        </div>
         <AddTodo addTodoItem={addTodoItem}></AddTodo>
       </div>
       <Tabs

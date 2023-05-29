@@ -49,3 +49,17 @@ li.todo-done-item p{
   font-size: 16px;
   color: #4D5C60;
 }
+
+.no-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* flex: 1 1 0%; */
+}
+
+.no-list-img {
+  width: 100px;
+  height: 100px;
+  background-image: url(../../public/checklist1-100.png);
+}

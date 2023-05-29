@@ -37,16 +37,24 @@ const Tabs = ({activeTab, updateActiveTab, todoList, handleTodoDelete, handleTod
       </ul>
       
       <div className="list-items">
-        <ul>
-          {pendingTodos().map((todo) => (
-            <TodoItem 
-              key={todo.id} todo={todo} handleTodoDelete={handleTodoDelete} handleTodoDone={handleTodoDone}/>
-          ))}
-          {doneTodos().map((todo) => (
-            <TodoItem 
-              key={todo.id} todo={todo} handleTodoDelete={handleTodoDelete} handleTodoDone={handleTodoDone}/>
-          ))}
-        </ul>
+        {todoList[activeTab].length === 0 ? (
+            <div className="no-list-item">
+              <div className="no-list-img"></div>
+              <p>No Todos available in {activeTab} priority</p>
+            </div>
+          ) : (
+            <ul>
+              {pendingTodos().map((todo) => (
+                <TodoItem 
+                  key={todo.id} todo={todo} handleTodoDelete={handleTodoDelete} handleTodoDone={handleTodoDone}/>
+              ))}
+              {doneTodos().map((todo) => (
+                <TodoItem 
+                  key={todo.id} todo={todo} handleTodoDelete={handleTodoDelete} handleTodoDone={handleTodoDone}/>
+              ))}
+            </ul>
+          )
+        }
       </div>
     </div>
   )
