@@ -70,7 +70,7 @@
   @media screen(max-width:768px) {
     padding: 24px 16px;
   }
-  overflow:scroll;
+  overflow: scroll;
 }
 
 ul.nav {
